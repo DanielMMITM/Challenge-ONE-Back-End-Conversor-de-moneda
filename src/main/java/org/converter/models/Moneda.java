@@ -20,7 +20,12 @@ public class Moneda {
     private double getValor() {
         return valor;
     }
+
     private void setValor(double valor) {
         this.valor = valor;
+    }
+
+    public double doConversion(double cantidad){
+        return this.valor * cantidad;
     }
 }
