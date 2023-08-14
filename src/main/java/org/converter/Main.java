@@ -102,29 +102,29 @@ public class Main {
                     temperatura = (String) JOptionPane.showInputDialog(null, "Ingresa la temperatura que deseas convertir",
                             "Grados", JOptionPane.QUESTION_MESSAGE);
                 }
-                while (!temperatura.matches("^-[0-9]*.[0-9]*$"));
+                while (!temperatura.matches("^-?[0-9]*.[0-9]*$"));
                 switch (temperatureSelected){
                     case "Grados Celsius a grados Farenheit":
-                        Temperatura Farenheit = new Temperatura("Farenheit");
-                        grados = Farenheit.doCelsiusToFarenheitConversion(Double.parseDouble(temperatura));
+                        Temperatura Farenheit = new Temperatura("Farenheit", Double.parseDouble(temperatura));
+                        grados = Farenheit.doCelsiusToFarenheitConversion();
                         JOptionPane.showMessageDialog(null, Double.parseDouble(temperatura) +
                                 " grados Celsius equivalen a " + grados + " grados Farenheit");
                         break;
                     case "Grados Celsius a grados Kelvin":
-                        Temperatura Kelvin = new Temperatura("Kelvin");
-                        grados = Kelvin.doCelsiusToKelvinConversion(Double.parseDouble(temperatura));
+                        Temperatura Kelvin = new Temperatura("Kelvin", Double.parseDouble(temperatura));
+                        grados = Kelvin.doCelsiusToKelvinConversion();
                         JOptionPane.showMessageDialog(null, Double.parseDouble(temperatura) +
                                 " grados Celsius equivalen a " + grados + " grados Kelvin");
                         break;
                     case "Grados Farenheit a grados Celsius":
-                        Temperatura Celsius = new Temperatura("Celsius");
-                        grados = Celsius.doFarenheitToCelsiusConversion(Double.parseDouble(temperatura));
+                        Temperatura Celsius = new Temperatura("Celsius", Double.parseDouble(temperatura));
+                        grados = Celsius.doFarenheitToCelsiusConversion();
                         JOptionPane.showMessageDialog(null, Double.parseDouble(temperatura) +
                                 " grados Farenheit equivalen a " + grados + " grados Celsius");
                         break;
                     case "Grados Kelvin a grados Celsius":
-                        Temperatura Celsius2 = new Temperatura("Celsius");
-                        grados = Celsius2.doKelvinToCelsiusConversion(Double.parseDouble(temperatura));
+                        Temperatura Celsius2 = new Temperatura("Celsius", Double.parseDouble(temperatura));
+                        grados = Celsius2.doKelvinToCelsiusConversion();
                         JOptionPane.showMessageDialog(null, Double.parseDouble(temperatura) +
                                 " grados Kerlvin equivalen a " + grados + " grados Celsius");
                         break;
@@ -134,5 +134,6 @@ public class Main {
         }
         while(option != 0);
         JOptionPane.showMessageDialog(null, "Has salido del programa");
+        return;
     }
 }

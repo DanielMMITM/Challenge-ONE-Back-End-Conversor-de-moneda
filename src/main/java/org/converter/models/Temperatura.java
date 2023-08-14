@@ -30,20 +30,22 @@ public class Temperatura {
         this.degrees = degrees;
     }
 
-    public double doCelsiusToFarenheitConversion(double temperatura){
-        return ((temperatura * (9 / 5)) + 32);
+    public double doCelsiusToFarenheitConversion(){
+        double op1 = (double)9/5;
+        return this.degrees * op1 + 32;
     }
 
-    public double doCelsiusToKelvinConversion(double temperatura){
-        return temperatura + 273.15;
+    public double doCelsiusToKelvinConversion(){
+        return this.degrees + 273.15;
     }
 
-    public double doFarenheitToCelsiusConversion(double temperatura){
-        return ((temperatura - 32) * (5/9));
+    public double doFarenheitToCelsiusConversion(){
+        double op1 = (double)5/9;
+        return ((this.degrees - 32) * op1);
     }
 
-    public double doKelvinToCelsiusConversion(double temperatura){
-        return temperatura - 273.15;
+    public double doKelvinToCelsiusConversion(){
+        return this.degrees - 273.15;
     }
 
 }
