@@ -29,4 +29,21 @@ public class Temperatura {
     public void setDegrees(double degrees) {
         this.degrees = degrees;
     }
+
+    public double doCelsiusToFarenheitConversion(double temperatura){
+        return ((temperatura * (9 / 5)) + 32);
+    }
+
+    public double doCelsiusToKelvinConversion(double temperatura){
+        return temperatura + 273.15;
+    }
+
+    public double doFarenheitToCelsiusConversion(double temperatura){
+        return ((temperatura - 32) * (5/9));
+    }
+
+    public double doKelvinToCelsiusConversion(double temperatura){
+        return temperatura - 273.15;
+    }
+
 }
