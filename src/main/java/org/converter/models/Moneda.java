@@ -1,4 +1,4 @@
-package org.example.models;
+package org.converter.models;
 
 public class Moneda {
     private String currency;
@@ -9,19 +9,18 @@ public class Moneda {
         this.valor = valor;
     }
 
-    public String getDivisa() {
+    private String getDivisa() {
         return currency;
     }
 
-    public void setDivisa(String currency) {
+    private void setDivisa(String currency) {
         this.currency = currency;
     }
 
-    public double getValor() {
+    private double getValor() {
         return valor;
     }
-
-    public void setValor(double valor) {
+    private void setValor(double valor) {
         this.valor = valor;
     }
 }
