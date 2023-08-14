@@ -95,5 +95,6 @@ public class Main {
             option = JOptionPane.showConfirmDialog(null, "Quieres salir del programa?");
         }
         while(option != 0);
+        JOptionPane.showMessageDialog(null, "Has salido del programa");
     }
 }
