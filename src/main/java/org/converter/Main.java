@@ -12,6 +12,8 @@ public class Main {
         String[] currencyOptions = {"Pesos MXN a Dólar", "Pesos MXN a Euros", "Pesos MXN a Libras Esterlinas", "Pesos MXN a Yen Japonés"
                 , "Pesos MXN a Won Surcoreano", "Dólar a Pesos MXN", "Euros a Pesos MXN", "Libras Esterlinas a Pesos MXN",
                 "Yen Japonés a Pesos MXN", "Won Sulcoreano a Pesos MXN"};
+        String[] temperatureOptions = {"Grados Celsius a grados Farenheit","Grados Celsius a grados Kelvin",
+                "Grados Farenheit a grados Celsius", "Grados Kelvin a grados Celsius"};
         do {
             String topicSelected = (String) JOptionPane.showInputDialog(null, "Que operación deseas realizar?",
                     "Conversor", JOptionPane.QUESTION_MESSAGE, null, topicOptions, null);
@@ -78,7 +80,8 @@ public class Main {
                         pesoMXN.setValor(0.12);
                         pesosMXN = pesoMXN.doConversion(Double.parseDouble(cantidad));
                         JOptionPane.showMessageDialog(null, Double.parseDouble(cantidad) +
-                                " yens japoneses equivale a " + pesosMXN + " pesos mexicanos", "Yen Japonés a Pesos Mexicanos", JOptionPane.YES_NO_CANCEL_OPTION);
+                                " yens japoneses equivale a " + pesosMXN + " pesos mexicanos", "Yen Japonés a Pesos Mexicanos",
+                                JOptionPane.YES_NO_CANCEL_OPTION);
                         break;
                     case "Won Surcoreano a Pesos MXN":
                         pesoMXN.setValor(0.013);
@@ -90,7 +93,26 @@ public class Main {
                 }
             }
             else {
+                String temperatureSelected = (String) JOptionPane.showInputDialog(null,
+                        "Selecciona la escala a convertir", "Temperaturas", JOptionPane.QUESTION_MESSAGE,
+                        null, temperatureOptions, null);
+                String temperatura = "0";
+                do {
+                    temperatura = (String) JOptionPane.showInputDialog(null, "Ingresa la temperatura que deseas convertir",
+                            "Grados", JOptionPane.QUESTION_MESSAGE);
+                }
+                while (!temperatura.matches("^[0-9]*.[0-9]*$"));
+                switch (temperatureSelected){
+                    case "Grados Celsius a grados Farenheit":
+                        break;
+                    case "Grados Celsius a grados Kelvin":
+                        break;
+                    case "Grados Farenheit a grados Celsius":
+                        break;
+                    case "Grados Kelvin a grados Celsius":
+                        break;
 
+                }
             }
             option = JOptionPane.showConfirmDialog(null, "Quieres salir del programa?");
         }
