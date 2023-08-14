@@ -9,11 +9,15 @@ public class Moneda {
         this.valor = valor;
     }
 
+    public Moneda(String currency) {
+        this.currency = currency;
+    }
+
     private String getDivisa() {
         return currency;
     }
 
-    private void setDivisa(String currency) {
+    protected void setDivisa(String currency) {
         this.currency = currency;
     }
 
@@ -21,7 +25,7 @@ public class Moneda {
         return valor;
     }
 
-    private void setValor(double valor) {
+    public void setValor(double valor) {
         this.valor = valor;
     }
 

@@ -5,7 +5,8 @@ import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[] args) {
-
+        Moneda pesoMXN = new Moneda("Pesos mexicanos");
+        double pesosMXN;
         String[] topicOptions = {"Cambio de moneda", "Cambio de temperatura"};
         String topicSelected = (String)JOptionPane.showInputDialog(null, "Que operación deseas realizar?",
                 "Conversor", JOptionPane.QUESTION_MESSAGE, null, topicOptions, null);
@@ -54,14 +55,34 @@ public class Main {
                             " pesos equivale a " + wonsSurcoreanos + " wons surcoreanos");
                     break;
                 case "Dólar a Pesos MXN":
+                    pesoMXN.setValor(17.04);
+                    pesosMXN =  pesoMXN.doConversion(Double.parseDouble(cantidad));
+                    JOptionPane.showMessageDialog(null, Double.parseDouble(cantidad) +
+                            " dolares equivale a " + pesosMXN + " pesos mexicanos");
                     break;
                 case "Euros a Pesos MXN":
+                    pesoMXN.setValor(18.63);
+                    pesosMXN =  pesoMXN.doConversion(Double.parseDouble(cantidad));
+                    JOptionPane.showMessageDialog(null, Double.parseDouble(cantidad) +
+                            " euros equivale a " + pesosMXN + " pesos mexicanos");
                     break;
                 case "Libras Esterlinas a Pesos MXN":
+                    pesoMXN.setValor(21.58);
+                    pesosMXN =  pesoMXN.doConversion(Double.parseDouble(cantidad));
+                    JOptionPane.showMessageDialog(null, Double.parseDouble(cantidad) +
+                            " libras esterlinas equivale a " + pesosMXN + " pesos mexicanos");
                     break;
                 case "Yen Japonés a Pesos MXN":
+                    pesoMXN.setValor(0.12);
+                    pesosMXN =  pesoMXN.doConversion(Double.parseDouble(cantidad));
+                    JOptionPane.showMessageDialog(null, Double.parseDouble(cantidad) +
+                            " yens japoneses equivale a " + pesosMXN + " pesos mexicanos");
                     break;
                 case "Won Surcoreano a Pesos MXN":
+                    pesoMXN.setValor(0.013);
+                    pesosMXN =  pesoMXN.doConversion(Double.parseDouble(cantidad));
+                    JOptionPane.showMessageDialog(null, Double.parseDouble(cantidad) +
+                            " wons surcoreanos   equivale a " + pesosMXN + " pesos mexicanos");
                     break;
 
             }
