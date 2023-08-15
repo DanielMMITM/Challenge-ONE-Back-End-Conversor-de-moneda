@@ -15,7 +15,7 @@ Para mi caso la moneda utilizada en mi país es el peso mexicano, por lo que se 
 * Convertir de Libras Esterlinas a la moneda de tu país.
 * Convertir de Yen Japonés a la moneda de tu país.
 * Convertir de Won sul-coreano a la moneda de tu país.
-# Extras
+### Extras
 Como desafío extra se realizó otro "menu" para poder realizar conversiones de grados, es decir:
 * Grados Celsius a Grados Fahrenheit.
 * Grados Celsius a Grados Kelvin.
