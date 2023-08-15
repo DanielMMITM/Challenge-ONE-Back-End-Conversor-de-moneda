@@ -9,7 +9,7 @@ En esta oportunidad, a los Devs se nos solicitó crear un conversor de divisas u
   * Convertir de la moneda de tu país  a Yen Japonés.
   * Convertir de la moneda de tu país  a Won sul-coreano.
 <br/>
-Para mi caso la moneda utilizada en mi país es el peso mexicano, por lo que se manejara esta y se hará las conversiones a las demás. Este convertidor también debe ser capaz de hacer la conversión inversa, es decir:
+Para mi caso la moneda utilizada en mi país es el peso mexicano, por lo que se manejara esta y se hará las conversiones a las demás. Este convertidor también debe ser capaz de hacer la conversión inversa, es decir:<br/>
 * Convertir de Dólar a la moneda de tu país.
 * Convertir de Euros a la moneda de tu país.
 * Convertir de Libras Esterlinas a la moneda de tu país.
