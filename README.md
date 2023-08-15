@@ -1,7 +1,7 @@
-### Challenge-ONE-Back-End-Conversor-de-moneda
+# Challenge-ONE-Back-End-Conversor-de-moneda
 En esta oportunidad, a los Devs se nos solicitó crear un conversor de divisas utilizando el lenguaje Java. Las características solicitadas por nuestro cliente son las siguientes:
 
-# Requisitos
+### Requisitos
 * El convertidor de moneda debe manejar las siguientes divisas.
 * * Convertir de la moneda de tu país a Dólar.
 * * Convertir de la moneda de tu país  a Euros.
