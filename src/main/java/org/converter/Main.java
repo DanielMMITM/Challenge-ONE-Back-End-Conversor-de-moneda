@@ -12,7 +12,7 @@ public class Main {
         String[] topicOptions = {"Cambio de moneda", "Cambio de temperatura"};
         String[] currencyOptions = {"Pesos MXN a Dólar", "Pesos MXN a Euros", "Pesos MXN a Libras Esterlinas", "Pesos MXN a Yen Japonés"
                 , "Pesos MXN a Won Surcoreano", "Dólar a Pesos MXN", "Euros a Pesos MXN", "Libras Esterlinas a Pesos MXN",
-                "Yen Japonés a Pesos MXN", "Won Sulcoreano a Pesos MXN"};
+                "Yen Japonés a Pesos MXN", "Won Surcoreano a Pesos MXN"};
         String[] temperatureOptions = {"Grados Celsius a grados Farenheit","Grados Celsius a grados Kelvin",
                 "Grados Farenheit a grados Celsius", "Grados Kelvin a grados Celsius"};
         do {
