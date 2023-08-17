@@ -18,7 +18,6 @@ public class Main {
         do {
             String topicSelected = (String) JOptionPane.showInputDialog(null, "Que operación deseas realizar?",
                     "Conversor", JOptionPane.QUESTION_MESSAGE, null, topicOptions, null);
-            System.out.println(topicSelected);
             if (topicSelected == topicOptions[0]) {
                 String currencySelected = (String) JOptionPane.showInputDialog(null, "Selecciona la divisa a convertir",
                         "Divisas", JOptionPane.QUESTION_MESSAGE, null, currencyOptions, null);
